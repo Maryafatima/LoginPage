@@ -1,0 +1,92 @@
+body {
+ margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('bgimg.jpeg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-box {
+  width: 350px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  border-radius: 10px;
+  color:white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* keep this if blur effect is still wanted */
+}
+input::placeholder {
+  color: #eeeeee; /* Light grey-white */
+  opacity: 1; /* Make sure it's visible */
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  background-color: rgba(0,0,50, 0.05);
+  color:#ffffff;
+  border-radius: 5px;
+  border:none;
+  font-size: 14px;
+}
+
+
+.login-box a {
+  font-size: 12px;
+  color: lightblue;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box .google {
+  background: white;
+  color: black;
+}
+
+.login-box .apple {
+  background: white;
+  color: black;
+}
+
+.or {
+  text-align: center;
+  margin: 10px 0;
+  color: #ccc;
+}
+.login-box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* space between icon and text */
+  font-size: 14px;
+}
+
+.login-box button .icon {
+  width: 30px;
+  height: 20px;
+}
